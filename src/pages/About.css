@@ -1,0 +1,114 @@
+.about-page { padding: 4rem 0 6rem; }
+
+.about-hero {
+  max-width: 680px;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-hero__title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.about-hero__desc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.about-card--full { grid-column: 1 / -1; }
+.about-card__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about-card__text {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+/* Tech */
+.about-tech-list { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.about-tech-item {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(102,252,241,0.07);
+  border: 1px solid var(--border-accent);
+  border-radius: 6px;
+  color: var(--accent);
+}
+
+/* Team */
+.about-team { display: flex; flex-direction: column; gap: 1rem; }
+.about-member { display: flex; align-items: center; gap: 1rem; }
+.about-member__avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+  color: var(--bg-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.about-member__name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.about-member__role {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Methods */
+.about-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about-methods-cat {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+}
+.about-methods-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.about-methods-list li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  padding-left: 0.75rem;
+  position: relative;
+}
+.about-methods-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-methods-grid { grid-template-columns: 1fr; }
+}
