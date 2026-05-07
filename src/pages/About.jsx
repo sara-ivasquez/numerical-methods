@@ -1,8 +1,8 @@
 import './About.css'
 
 const team = [
-  { name: 'Tu nombre aquí',       role: 'Desarrollador',  initials: 'TN' },
-  { name: 'Nombre compañero',     role: 'Desarrollador',  initials: 'NC' },
+  { name: 'Sara Isabel Vasquez',       role: 'Desarrollador',  initials: 'SV' },
+  { name: 'Sebastian',     role: 'Desarrollador',  initials: 'S' },
 ]
 
 const methods = [

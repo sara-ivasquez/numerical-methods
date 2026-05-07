@@ -1,0 +1,64 @@
+.points-input { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.points-input__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.points-input__row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.points-input__idx {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.points-input__row input {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.4rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  width: 90px;
+  text-align: center;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.points-input__row input:focus { border-color: var(--accent); }
+
+.points-input__remove {
+  background: transparent;
+  border: 1px solid rgba(195,7,63,0.3);
+  border-radius: 6px;
+  color: #ff6b9d;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  transition: all var(--transition);
+}
+.points-input__remove:hover { background: rgba(195,7,63,0.1); }
+
+.points-input__add {
+  background: transparent;
+  border: 1px dashed var(--border-accent);
+  border-radius: 6px;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  transition: all var(--transition);
+  margin-top: 0.25rem;
+}
+.points-input__add:hover { background: rgba(102,252,241,0.06); }

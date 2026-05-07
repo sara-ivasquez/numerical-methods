@@ -1,0 +1,38 @@
+.matrix-input { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.matrix-input__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.matrix-input__row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.matrix-input__cell {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.4rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  width: 70px;
+  text-align: center;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.matrix-input__cell:focus { border-color: var(--accent); }
+.matrix-input__cell--b { border-color: rgba(102,252,241,0.3); }
+
+.matrix-input__sep {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  padding: 0 0.2rem;
+}

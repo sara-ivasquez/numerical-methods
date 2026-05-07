@@ -58,3 +58,26 @@
 }
 .method-form__btn:hover { background: #7ffff9; transform: translateY(-1px); }
 .method-results { display: flex; flex-direction: column; gap: 1.5rem; }
+
+/* Solution box */
+.solution-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+.solution-box__title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.solution-box__item {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+.solution-box__item span { color: var(--accent); font-weight: 700; }
